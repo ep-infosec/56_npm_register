@@ -1,0 +1,39 @@
+{
+    "name":               "register",
+    "description":        "A CGI-like router that maps URLs to JavaScript layed out on a file system.",
+    "author":             "Alan Gutierrez",
+    "version":            "0.0.0",
+    "keywords":
+    [
+                          "cgi", "template", "html", "xml", "text", "xhtml", "async", "asynchronous"
+    ],
+    "licenses":
+    [{
+                          "type": "MIT",
+                          "url": "http://github.com/bigeasy/register/raw/master/LICENSE"
+    }],
+    "homepage":           "https://github.com/bigeasy/register",
+    "repository":
+    {
+                          "type": "git",
+                          "url": "http://github.com/bigeasy/register.git"
+    },
+    "devDependencies":
+    {
+                          "proof": "0.0.47",
+                          "connect": "~2",
+                          "arguable": "0.0.9",
+                          "request": "~2",
+                          "uglify-js": "~1.3"
+    },
+    "dependencies":
+    {
+                          "cadence": "0.0.25",
+                          "avenue": "0.0.3",
+                          "locate": "0.0.8"
+    },
+    "scripts":
+    {
+                          "test": "proof platform win32 && proof test */*/*.t.js || t/test"
+    }
+}
